@@ -6,12 +6,33 @@ body {
     position: relative;    /* for scroll bar */
 }
 
+
+
+.title-container {
+    display: flex;                /* enable flexbox */
+    justify-content: center;      /* horizontal center */
+    align-items: center;          /* vertical center if container has height */
+    height: 270px;                /* optional for spacing */
+}
+
 .title {
     font-family: "Bitcount Prop Double Ink", sans-serif;
-    text-align: center;
-    padding: 40px;
     font-size: 80px;
+    color: #c71585;               /* dark pink */
+    display: inline-block;        /* required for transform animation */
+    animation: bounce 1.5s infinite ease-in-out;
 }
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 /* Library grid */
 .library {
@@ -23,13 +44,14 @@ body {
 }
 
 /* Story cards */
-.card{
+.card {
     background: #fce8ec;
     padding: 20px;
     border-radius: 20px;
     text-decoration: none;
     color: pink;
     transition: 0.2s;
+
 }
 
 .card:hover{
@@ -125,4 +147,6 @@ body {
 .back:hover {
     color: #000;
 }
+
+
 
