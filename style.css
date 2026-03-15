@@ -30,9 +30,6 @@ body {
     text-decoration: none;
     color: pink;
     transition: 0.2s;
-    background-image: url('images/cover1.png');
-    background-image: url('images/cover2.png');
-    background-image: url('images/cover3.png');
 }
 
 .card:hover{
